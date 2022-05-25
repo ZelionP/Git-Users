@@ -1,5 +1,4 @@
 export default{
-  
     "login": "ZelionP",
     "id": 89801600,
     "node_id": "MDQ6VXNlcjg5ODAxNjAw",
@@ -19,18 +18,17 @@ export default{
     "type": "User",
     "site_admin": false,
     "name": "Redon",
-    "company": null,
-    "blog": "",
-    "location": null,
+    "company": "Your mom",
+    "blog": "DontGotOne.com",
+    "location": "Prishtine,Kosovo",
     "email": null,
     "hireable": null,
-    "bio": null,
+    "bio": "Love what you love, I love programming",
     "twitter_username": "RednoxB",
-    "public_repos": 10,
+    "public_repos": 11,
     "public_gists": 0,
     "followers": 0,
-    "following": 0,
+    "following": 1,
     "created_at": "2021-08-30T17:29:26Z",
-    "updated_at": "2022-05-16T18:38:06Z"
-  
-}
+    "updated_at": "2022-05-25T18:47:54Z"
+  }
