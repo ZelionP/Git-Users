@@ -19,56 +19,36 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // STEP 2 - Chart Data
-const ChartData = [
-  {
-    label: "HTML",
-    value: "13"
-  },
-  {
-    label: "CSS",
-    value: "23"
-  },
-  {
-    label: "JavaScript",
-    value: "80"
-  },
-  {
-    label: "C++",
-    value: "140"
-  },
-  {
-    label: "C#",
-    value: "150"
-  }
-];
+
 
 // STEP 3 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-  type: "column2d", // The chart type
-  width: "400", // Width of the chart
-  height: "400", // Height of the chart
-  dataFormat: "json", // Data type
-  dataSource: {
-    // Chart Configuration
-    chart: {
-      //Set the chart caption
-      caption: "Programming languiges",
-      //Set the chart subcaption
-      subCaption: "In MMbbl = One Million barrels",
-      //Set the x-axis name
-      xAxisName: "Country",
-      //Set the y-axis name
-      yAxisName: "Reserves (MMbbl)",
-      numberSuffix: "K",
-      //Set the theme for your chart
-      theme: "fusion"
-    },
-    // Chart Data
-    data: ChartData
-  }
-};
 
-const ChartComponent = () => {
+
+const ChartComponent = ({ data }) => {
+  const chartConfigs = {
+    type: "column2d", // The chart type
+    width: "400", // Width of the chart
+    height: "400", // Height of the chart
+    dataFormat: "json", // Data type
+    dataSource: {
+      // Chart Configuration
+      chart: {
+        //Set the chart caption
+        caption: "The most Web Languiges",
+        //Set the chart subcaption
+        subCaption: "In MMbbl = One Million barrels",
+        //Set the x-axis name
+        xAxisName: "Country",
+        //Set the y-axis name
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        //Set the theme for your chart
+        theme: "fusion"
+      },
+      // Chart Data
+      data,
+    }
+  };
   return (<ReactFC {...chartConfigs} />);
 }
 // STEP 4 - Creating the DOM element to pass the react-fusioncharts component
