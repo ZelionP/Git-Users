@@ -34,7 +34,7 @@ const ChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "The most Web Languiges",
+        caption: "Popularity of programming languiges",
         //Set the chart subcaption
         subCaption: "In MMbbl = One Million barrels",
         //Set the x-axis name

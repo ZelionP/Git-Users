@@ -34,14 +34,14 @@ const ChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Programming languiges",
+        caption: "Languiges to user M",
         //Set the chart subcaption
-        subCaption: "Numbers represented in percent",
+        subCaption: " for M",
         //Set the x-axis name
         xAxisName: "Country",
         //Set the y-axis name
         yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
+        numberSuffix: "M",
         decimals:"0",
         //Set the theme for your chart
         theme: "fusion"
